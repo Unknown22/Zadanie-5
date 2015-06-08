@@ -54,8 +54,8 @@ class ShowByPerson(tornado.web.RequestHandler):
     def get(self, person):
         persondict = {}
         x = 1
-        if x < 10:
-           for i in logs:
+        for i in logs:
+            if x < 11:
                if person in i:
                     persondict[x] = i
                     x += 1
@@ -68,8 +68,8 @@ class ShowByCategory(tornado.web.RequestHandler):
     def get(self, category):
         categorydict = {}
         x = 1
-        if x < 10:
-           for i in logs:
+        for i in logs:
+            if x < 3:
                if category in i:
                     categorydict[x] = i
                     x += 1
