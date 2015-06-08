@@ -69,7 +69,7 @@ class ShowByCategory(tornado.web.RequestHandler):
         categorydict = {}
         x = 1
         for i in logs:
-            if x < 3:
+            if x < 11:
                if category in i:
                     categorydict[x] = i
                     x += 1
